@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-atau install global:
+or install in global:
 ### `npm install -g .`
 
 Command:<br>
