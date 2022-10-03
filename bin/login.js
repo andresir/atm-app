@@ -3,7 +3,6 @@
 const yargs = require('yargs');
 const fs = require('fs');
 const { capitalize } = require('../helper/capitalize');
-const { exit } = require('process');
 
 const login = yargs
 .command(
@@ -12,7 +11,7 @@ const login = yargs
 .help()
 .argv
 
-let greeting, balance, arrOwedTo = [], arrOwedFrom = [], dataTemp = {}, newDataTemp = {};
+let greeting, balance, arrOwedFrom = [], dataTemp = {}, newDataTemp = {};
 if(login._.length > 0) {
   let name = login._[0].toLowerCase();
   let temp = {};

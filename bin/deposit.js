@@ -13,7 +13,6 @@ const deposit = yargs
 
 let greeting, balance, userBalance, balancing, sisaOwed = [], arrOwed = [], newDataTemp = {};
 if(deposit._.length > 0) {
-
   newDataTemp = JSON.parse(fs.readFileSync('temp.json', 'utf8'));
   for(let userName in newDataTemp) {
     if(newDataTemp[userName].login === true) {

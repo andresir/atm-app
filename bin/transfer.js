@@ -19,13 +19,9 @@ if(transfer._.length > 0) {
   newDataTemp = JSON.parse(fs.readFileSync('temp.json', 'utf8'));
 
   if(newDataTemp[target]) {
-    // let flag = false;
     for(let userName in newDataTemp) {
       if(newDataTemp[userName].login === true) {
         if(Number(amount) < newDataTemp[userName].balance) {
-
-
-
           if(Object.keys(newDataTemp[userName].owed_from).length > 0) {
             let arrTargetOwedFrom = Object.keys(newDataTemp[userName].owed_from);
             for(let i=0; i<arrTargetOwedFrom.length; i++) {
@@ -42,7 +38,6 @@ if(transfer._.length > 0) {
               newDataTemp = Object.assign(newDataTemp);
               fs.writeFileSync('temp.json', JSON.stringify(newDataTemp, null, 2));
             }
-            
           } else {
             newDataTemp[target].balance += Number(amount);
             newDataTemp[userName].balance -= Number(amount);
@@ -83,7 +78,6 @@ if(transfer._.length > 0) {
     console.log(balance);
     owed > 0?console.log(owed):'';
   }
-  
 } else {
   let useCommand = `use command: "transfer [target] [amount]"`;
   console.log(useCommand);
