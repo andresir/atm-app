@@ -6,6 +6,9 @@ Develop a Command Line Interface (CLI) to simulate an interaction of an ATM with
 
 In the project directory, you can run:
 
+### `npm install`
+
+atau install global:
 ### `npm install -g .`
 
 Command:<br>
