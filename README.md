@@ -21,7 +21,7 @@ Command:<br>
 
 ### Example Session
 
-Your console output should contain at least the following output depending on the scenario and commands. But feel free to add extra output as you see fit.
+Your console output should contain at least the following output depending on the scenario and commands.
 
 ```bash
 
