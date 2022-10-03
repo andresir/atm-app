@@ -1,0 +1,26 @@
+{
+  "name": "atm-cli",
+  "version": "1.0.0",
+  "description": "ATM Retail Bank",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Git",
+    "CLI"
+  ],
+  "author": "Andres",
+  "license": "ISC",
+  "bin": {
+    "hello": "./bin/index.js",
+    "login": "./bin/login.js",
+    "logout": "./bin/logout.js",
+    "deposit": "./bin/deposit.js",
+    "withdraw": "./bin/withdraw.js",
+    "transfer": "./bin/transfer.js"
+  },
+  "dependencies": {
+    "yargs": "^17.6.0"
+  }
+}
